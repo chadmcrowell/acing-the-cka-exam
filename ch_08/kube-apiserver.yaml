@@ -35,13 +35,13 @@ spec:
     - --requestheader-username-headers=X-Remote-User
     - --runtime-config=
     - --secure-port=6443
-    - --event-ttl 2h
     - --service-account-issuer=https://kubernetes.default.svc.cluster.local
     - --service-account-key-file=/etc/kubernetes/pki/sa.pub
     - --service-account-signing-key-file=/etc/kubernetes/pki/sa.key
     - --service-cluster-ip-range=10.96.0.0/16
     - --tls-cert-file=/etc/kubernetes/pki/apiserver.crt
     - --tls-private-key-file=/etc/kubernetes/pki/apiserver.key
+    - --event-ttl 2h
     image: registry.k8s.io/kube-apiserver:v1.25.0-beta.0
     imagePullPolicy: IfNotPresent
     livenessProbe:
