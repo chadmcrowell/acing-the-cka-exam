@@ -30,12 +30,12 @@ metadata:
   creationTimestamp: null
   labels:
     app: nginx
-  name: nginx
+  name: nginx-svc
 spec:
   ports:
-  - port: 8080
+  - port: 80
     protocol: TCP
-    targetPort: 8080
+    targetPort: 80
   selector:
     app: nginx
   type: ClusterIP
